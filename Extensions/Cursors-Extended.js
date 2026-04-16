@@ -1,14 +1,15 @@
 // MIT Licence 
 // Original by https://github.com/otterboing
+// https://github.com/otterboing/Turbowarp-Extensions/blob/main/Extensions/Cursors-Extended.js
 (function (Scratch) {
 
 const canvas = document.querySelector('canvas');
 let currentCursor = 'default'
 
-class extendedCursors {
+class OBextendedCursors {
   getInfo() {
     return {
-      id: 'extendedCursors',
+      id: 'OBextendedCursors',
       name: 'Extended Cursors',
       blocks: [
         {
@@ -168,6 +169,6 @@ class extendedCursors {
   }
   
 }
-Scratch.extensions.register(new extendedCursors());
+Scratch.extensions.register(new OBextendedCursors());
 
 })(Scratch);
