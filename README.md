@@ -17,7 +17,7 @@ Updates may break things, always backup your project.
 ### Small-Math
 [smallMath](https://github.com/otterboing/Otterboings-Turbowarp-Extensions/blob/main/Extensions/smallMath.js)
 
-Math blocks mini-fied to hopefully be smaller _(in the block editor not code)_ than other extensions.
+Math blocks minified to hopefully be smaller _(in the block editor not code)_ than other extensions.
 
 It's also got some blocks for checking distances and collisions.
 
