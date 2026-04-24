@@ -16,6 +16,11 @@ Updates may break things, always backup your project.
 
 ### Small-Math
 [smallMath](https://github.com/otterboing/Otterboings-Turbowarp-Extensions/blob/main/Extensions/smallMath.js)
+
+Math blocks mini-fied to hopefully be smaller _(in the block editor not code)_ than other extensions.
+
+It's also got some blocks for checking distances and collisions.
+
 #### Blocks:
 - Math: `[input1] [+,-,*,/] [input2]`
 - Compare: `[input1] [>,<,==,===,>=,<=] [input2]`
@@ -28,6 +33,11 @@ Updates may break things, always backup your project.
 
 ### Cursors-Extended
 [Cursors-Extended](https://github.com/otterboing/Otterboings-Turbowarp-Extensions/blob/main/Extensions/Cursors-Extended.js)
+
+An alternative to the [Mouse Cursors Extension](https://github.com/TurboWarp/extensions/blob/master/extensions/cursor.js)
+
+Allows for setting the mouse cursor to any of the built in cursors in the browser or from a URL.
+
 #### Blocks:
 - Set Cursor to: `Set cursor to: [every browser cursor; I ain't writing all that]`
 - Set cursor from URL: `Set cursor from URL: [url]`
