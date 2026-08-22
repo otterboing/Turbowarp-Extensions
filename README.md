@@ -287,6 +287,14 @@ See [NoBots.md](NoBots.md) for more details.
 
 ---
 
+# Releases
+
+There are no releases rn.
+
+There might be one when I get the extensions to a comfortable enough place.
+
+---
+
 # License
 
 All code and extensions are licensed under the [MIT License](LICENSE) unless marked otherwise.
