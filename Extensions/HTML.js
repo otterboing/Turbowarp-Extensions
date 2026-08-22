@@ -31,18 +31,8 @@ function purify(html) {
 }
 //
 
-const ver = '1.3.0';
-// > Added blocks to get and set outer html of one or all elements matching a selector.
-// > Added blocks to get the mouse position on the page and in certain elements (based on the element's dimentions).
-// > Added blocks to check if one or any elements matching a selector match another selector (like ":hover" or ":active").
-// >> Added a block to get all the attributes of a certain element matching a selector as JSON!
-// >> Added blocks to set one or all matching a selector via JSON!
-// >> Added blocks to remove attributes from one or all matching a selector via ARRAY!
-// >> Added a Block to get all the attributes of all elements matching a selector as an array containing JSONs (using the order of the DOM).
-// >> Added blocks to remove a certain attribute from one or all matching a selector.
-// >> Moved mouseDown to a new Mouse section with the mouse position blocks.
-// >> Added blocks to add/remove classes in one or all matching a selector via text separated by commas or an array.
-// >> Added blocks to get all classes of one or all elements matching a selector.
+const ver = '1.3.1';
+// > Added Online Warning.
 
 // Licence of HTML5 and CSS3 logos: Creative Commons Attribution 3.0 Unported <https://creativecommons.org/licenses/by/3.0/>
 // icon and cssIcon attributed to the W3C. <https://www.w3.org/>
@@ -308,6 +298,7 @@ class OBhtml {
           func: 'CC3AU'
         },
         // End licence
+        makeButton('Online Warning!','onlineWarning'),
         label('HTML'),
         {
           opcode: 'toggleLog',
@@ -1721,8 +1712,12 @@ class OBhtml {
   alert(`This extension uses selectors to get elements from the page.\n\nIt also adds [Scratch="canvas"] to the app canvas so you can confidentally select it.\n\nIf you are unsure what selectors are, you should probably look it up first.\n\nIf you're offline or lazy you can reference this:\n\n".className" references an element's class\n"#Id" it's id\nand you can also reference it's tag directly: \n"div" = "<div></div>"\n\n You can reference attributes like: [attribute] or [attribute="value"].\n\nPlease use responsibly. (:`)
   }
 
+  onlineWarning() {
+  alert(`Warning!\nUsing this extension on projects that have online functionality is highly discouraged!\n\nFor the protection of users, any inputs that are sent or received need to be thouroughly sanitized!\n\nWhile the built in method may do this automatically, the best way to prevent attacks is to not allow connection at all.\n\nI (Otterboing) am definitely not a security expert, so this extension is probably a hazard and should be treated as such.\n\nI am not responsible for any problems that occur. 😊`)
+  }
+
   SanitizeNote() {
-  alert(`Note - All blocks that insert html are already sanitized.\nThe sanitize block is meant to clean html for other extensions that may use it.\n\nSuch as the marked.js extension: "markedInTurbowarp.js"\nUsing marked.js it takes markdown and outpus html.\n\nhttps://github.com/otterboing/Otterboings-Turbowarp-Extensions/blob/main/Extensions/markedInTurbowarp.js`)
+  alert(`Note - All blocks that insert html are already sanitized.\nThe sanitize block is meant to clean html for other extensions that may use it.\n\nSuch as the marked.js extension: "markedInTurbowarp.js"\nUsing marked.js it takes markdown and outpus html.\n\nhttps://github.com/otterboing/Otterboings-Turbowarp-Extensions/blob/main/Extensions/markedInTurbowarp.js \n\nShameless plug...`)
   }
 
   ApacheLicence() {
